@@ -3599,7 +3599,7 @@ input, select, textarea {
 		}
 
 		.logos .logo {
-			width: 90px; /* Standardize the width */
+			width: 75px; /* Standardize the width */
 			height: auto; /* Maintain aspect ratio */
 			object-fit: contain;
 			opacity: 0.75;
