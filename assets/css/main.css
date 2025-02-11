@@ -3595,12 +3595,12 @@ input, select, textarea {
 			gap: 30px;
 			background-color: #ffffff;
 			opacity: 0.75;
-			padding: 20px; /* Ajoute du padding pour augmenter la taille du fond */
+			padding: 20px;
 		}
 
 		.logos .logo {
-			width: 75px; /* Standardize the width */
-			height: auto; /* Maintain aspect ratio */
+			width: 60px;
+			height: auto;
 			object-fit: contain;
 			opacity: 0.75;
 		}
