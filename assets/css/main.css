@@ -3587,23 +3587,57 @@ input, select, textarea {
 
 		}
 
-/*Logos */
-		.logos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 30px;
-			background-color: #ffffff;
-			opacity: 0.75;
-			padding: 20px;
-		}
+/* Logos */
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    opacity: 0.75;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
-		.logos .logo {
-			width: 60px;
-			height: auto;
-			object-fit: contain;
-			opacity: 0.75;
-		}
+.logos .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    opacity: 0.75;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.logos .logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Media queries pour la responsivité */
+@media (max-width: 768px) {
+    .logos {
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .logos .logo {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logos {
+        gap: 8px;
+        padding: 10px;
+    }
+    
+    .logos .logo {
+        width: 40px;
+        height: 40px;
+    }
+}
 
 /* Main */
 
